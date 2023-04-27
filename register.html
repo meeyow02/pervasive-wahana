@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Page</title>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -241,11 +244,10 @@
               <p>Enter your information to register</p>
             </div>
             <div>
+              <!-- nama -->
               <div class="flex -mx-3">
-                <div class="w-1/2 px-3 mb-5">
-                  <label for="" class="text-xs font-semibold px-1"
-                    >First name</label
-                  >
+                <div class="w-full px-3 mb-5">
+                  <label for="" class="text-xs font-semibold px-1">Nama</label>
                   <div class="flex">
                     <div
                       class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"
@@ -257,30 +259,13 @@
                     <input
                       type="text"
                       class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                      placeholder="John"
-                    />
-                  </div>
-                </div>
-                <div class="w-1/2 px-3 mb-5">
-                  <label for="" class="text-xs font-semibold px-1"
-                    >Last name</label
-                  >
-                  <div class="flex">
-                    <div
-                      class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"
-                    >
-                      <i
-                        class="mdi mdi-account-outline text-gray-400 text-lg"
-                      ></i>
-                    </div>
-                    <input
-                      type="text"
-                      class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                      placeholder="Smith"
+                      placeholder="Wahana Bermain"
                     />
                   </div>
                 </div>
               </div>
+
+              <!-- Email -->
               <div class="flex -mx-3">
                 <div class="w-full px-3 mb-5">
                   <label for="" class="text-xs font-semibold px-1">Email</label>
@@ -295,13 +280,15 @@
                     <input
                       type="email"
                       class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                      placeholder="johnsmith@example.com"
+                      placeholder="wahana@example.com"
                     />
                   </div>
                 </div>
               </div>
+
+              <!-- Password -->
               <div class="flex -mx-3">
-                <div class="w-full px-3 mb-12">
+                <div class="w-full px-3 mb-5">
                   <label for="" class="text-xs font-semibold px-1"
                     >Password</label
                   >
@@ -319,8 +306,103 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Gender & HP -->
               <div class="flex -mx-3">
-                <div class="w-full px-3 mb-5">
+                <div class="w-1/2 px-3 mb-5">
+                  <label for="" class="text-xs font-semibold px-1"
+                    >Gender</label
+                  >
+                  <div class="flex">
+                    <div
+                      class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"
+                    ></div>
+                    <select
+                      class="form-select mt-1 w-full -ml-10 pl-3 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                    >
+                      <option>Pria</option>
+                      <option>Wanita</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="w-1/2 px-3 mb-5">
+                  <label for="" class="text-xs font-semibold px-1"
+                    >No. HP</label
+                  >
+                  <div class="flex">
+                    <div
+                      class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"
+                    ></div>
+                    <input
+                      type="tel"
+                      class="w-full -ml-10 pl-3 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                      placeholder="089999999999"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- TB BB -->
+              <div class="flex -mx-3">
+                <div class="w-1/2 px-3 mb-5">
+                  <label for="" class="text-xs font-semibold px-1"
+                    >Tinggi Badan (cm)</label
+                  >
+                  <div class="flex">
+                    <div
+                      class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"
+                    ></div>
+                    <input
+                      type="text"
+                      class="w-full -ml-10 pl-3 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                      placeholder="170"
+                    />
+                  </div>
+                </div>
+                <div class="w-1/2 px-3 mb-5">
+                  <label for="" class="text-xs font-semibold px-1"
+                    >Berat Badan (kg)</label
+                  >
+                  <div class="flex">
+                    <div
+                      class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"
+                    ></div>
+                    <input
+                      type="text"
+                      class="w-full -ml-10 pl-3 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                      placeholder="50"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Riwayat Penyakit -->
+              <!-- nama -->
+              <div class="flex -mx-3">
+                <div class="w-full px-3 mb-8">
+                  <label for="" class="text-xs font-semibold px-1"
+                    >Riwayat Penyakit</label
+                  >
+                  <div class="flex">
+                    <div
+                      class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"
+                    >
+                      <i
+                        class="mdi mdi-hospital-building text-gray-400 text-lg"
+                      ></i>
+                    </div>
+                    <input
+                      type="text"
+                      class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                      placeholder="Jantung"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- BUTTON -->
+              <div class="flex -mx-3">
+                <div class="w-full px-3 mb-2">
                   <button
                     class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
                   >
@@ -328,28 +410,19 @@
                   </button>
                 </div>
               </div>
+
+              <!-- Already have an acc -->
+              <p class="text-sm text-center text-gray-400">
+                Already have an account?
+                <a
+                  href="http://127.0.0.1:5500/login.html"
+                  class="text-indigo-400 focus:outline-none focus:underline focus:text-indigo-500 dark:focus:border-indigo-800"
+                  >Sign in</a
+                >.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- BUY ME A BEER AND HELP SUPPORT OPEN-SOURCE RESOURCES -->
-    <div
-      class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10"
-    >
-      <div>
-        <a
-          title="Buy me a beer"
-          href="https://www.buymeacoffee.com/scottwindon"
-          target="_blank"
-          class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
-        >
-          <img
-            class="object-cover object-center w-full h-full rounded-full"
-            src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg"
-          />
-        </a>
       </div>
     </div>
   </body>

@@ -1,33 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <!-- component -->
-    <div class="relative flex min-h-screen text-gray-800 antialiased flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-        <div class="relative py-3 sm:w-96 mx-auto text-center">
-        <span class="text-2xl font-light ">Login to your account</span>
-        <div class="mt-4 bg-white shadow-md rounded-lg text-left">
-            <div class="h-2 bg-indigo-400 rounded-t-md"></div>
-            <div class="px-8 py-6 ">
-            <label class="block font-semibold"> Username or Email </label>
-            <input type="text" placeholder="Email" class="border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-500 focus:ring-1 rounded-md">
-            <label class="block mt-3 font-semibold"> Username or Email </label>
-            <input type="password" placeholder="Password" class="border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-500 focus:ring-1 rounded-md">
-                <div class="flex justify-between items-baseline">
-                <button type="submit" class="mt-4 bg-indigo-500 text-white py-2 px-6 rounded-md hover:bg-indigo-600 ">Login</button>
-                <a href="#" class="text-sm hover:underline">Forgot password?</a>
+  </head>
+  <body>
+    <div class="flex items-center min-h-screen bg-white dark:bg-gray-900">
+      <div class="container mx-auto">
+        <div class="max-w-md mx-auto my-10">
+          <div class="text-center">
+            <h1
+              class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200"
+            >
+              Sign in
+            </h1>
+            <p class="text-gray-500 dark:text-gray-400">
+              Sign in to access your account
+            </p>
+          </div>
+          <div class="m-7">
+            <form action="">
+              <div class="mb-6">
+                <label
+                  for="email"
+                  class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="wahana@company.com"
+                  class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                />
+              </div>
+              <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                  <label
+                    for="password"
+                    class="text-sm text-gray-600 dark:text-gray-400"
+                    >Password</label
+                  >
+                  <a
+                    href="#!"
+                    class="text-sm text-gray-400 focus:outline-none focus:text-indigo-500 hover:text-indigo-500 dark:hover:text-indigo-300"
+                    >Forgot password?</a
+                  >
                 </div>
-            </div>
-            
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="************"
+                  class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                />
+              </div>
+              <div class="mb-6">
+                <button
+                  type="button"
+                  class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
+                >
+                  Sign in
+                </button>
+              </div>
+              <p class="text-sm text-center text-gray-400">
+                Don&#x27;t have an account yet?
+                <a
+                  href="http://127.0.0.1:5500/register.html"
+                  class="text-indigo-400 focus:outline-none focus:underline focus:text-indigo-500 dark:focus:border-indigo-800"
+                  >Sign up</a
+                >.
+              </p>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
