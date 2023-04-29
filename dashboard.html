@@ -21,9 +21,7 @@
   <body>
     <!-- TOPBAR -->
     <nav class="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-50">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center">
           <img
             src="/assets/img/amusement-park.png"
@@ -61,33 +59,33 @@
           >
             <div class="px-4 py-3">
               <span class="block text-sm text-gray-900 dark:text-white"
-                >Bonnie Green</span
+                >Guest Account</span
               >
-              <span
+              <!-- <span
                 class="block text-sm text-gray-500 truncate dark:text-gray-400"
                 >name@flowbite.com</span
-              >
+              > -->
             </div>
             <ul class="py-2" aria-labelledby="user-menu-button">
               <li>
                 <a
                   href="#"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                  >Settings</a
+                  >Dashboard</a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a
                   href="#"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >Balance</a
                 >
-              </li>
+              </li> -->
               <li>
                 <a
                   href="#"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                  >Sign out</a
+                  >Sign In / Sign Up</a
                 >
               </li>
             </ul>
@@ -132,14 +130,14 @@
             </li>
             <li>
               <a
-                href="#"
+                href="#rides"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Rides</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#restaurants"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Restaurant</a
               >
@@ -153,16 +151,9 @@
             </li>
             <li>
               <a
-                href="#"
+                href="#prices"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Pricing</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >My Purchase</a
               >
             </li>
           </ul>
@@ -174,49 +165,51 @@
     <!-- CONTENT -->
 
     <section
-      class="bg-[url('http://127.0.0.1:5500/assets/img/banner2.jpg')] bg-cover bg-[0_-200px] bg-no-repeat"
+      class="bg-white"
     >
-      <div
-        class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 h-[681px]"
-      >
-        <div class="mr-auto place-self-center lg:col-span-7">
-          <h1
-            class="max-w-1xl mb-8 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
-          >
-            Welcome To Wahana 09
-          </h1>
-
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-5 py-3 mr-3 mt-8 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-          >
-            Get started
-            <svg
-              class="w-5 h-5 ml-2 -mr-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+      <div class="px-4 py-32 md:px-16 md:py-16  lg:px-20 lg:py-20 bg-[url('http://127.0.0.1:5500/assets/img/banner2.jpg')] bg-cover w-full h-[560px] lg:bg-[0_-600px] bg-no-repeat bg-black bg-opacity-60 bg-blend-multiply shadow shadow-black/10 dark:shadow-black/40">
+        <div class="flex justify-center md:justify-start w-full">
+          <div class="flex flex-col mt-10 sm:mt-20 lg:mt-32">
+              <h1
+              class="mb-8 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
             >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </a>
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-blue-700 dark:focus:ring-blue-900"
-          >
-            Sign In / Sign Up
-          </a>
+              Welcome To Wahana 09
+            </h1>
+            <div class="flex items-center justify-center md:justify-start">
+              <a
+              href="#"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-semibold text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+            >
+              Get started
+              <svg
+                class="w-5 h-5 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="inline-flex bg-black bg-opacity-60 items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg hover:bg-opacity-100"
+            >
+              Sign In / Sign Up
+            </a>
+            </div>
+            
+          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Wahana -->
+    <!-- WAHANA -->
+    <a class="invisible relative block top-[-60px]" id="rides"></a>
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-5 my-10 mx-auto">
         <div
           class="p-4 flex flex-col w-full items-center justify-center text-center"
         >
@@ -234,7 +227,7 @@
             NIKMATI WAHANA IMAJINASI KAMI!
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
           <div class="p-4">
             <div
               class="bg-gray-100 shadow-lg p-6 rounded-lg transition duration-500 hover:scale-110"
@@ -280,6 +273,192 @@
         </div>
       </div>
     </section>
+    <!-- END OF WAHANA -->
+
+    <!-- RESTAURANT -->
+    <a class="invisible relative block top-[-60px]" id="restaurants"></a>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 my-10 mx-auto">
+        <div
+          class="p-4 flex flex-col w-full items-center justify-center text-center"
+        >
+          <div class="w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+            >
+              Restaurant
+            </h1>
+            <div class="mx-auto h-1 w-[120px] bg-indigo-500 rounded mb-5"></div>
+          </div>
+          <p class="w-1/2 leading-relaxed text-gray-500">
+            Ingin mencari tempat makan kala liburan? Mengapa tidak menikmati
+            restaurant di Wahana Imajinasi yang terkenal seru dan menyenangkan? AYOK
+            NIKMATI RESTAURANT IMAJINASI KAMI!
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+          <div class="p-4">
+            <div
+              class="bg-gray-100 shadow-lg p-6 rounded-lg transition duration-500 hover:scale-110"
+            >
+              <img
+                class="max-h-60 2xl:max-h-[384px] w-full rounded object-cover object-center mb-6"
+                src="/assets/img/resto1.jpg"
+                alt="content"
+              />
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Resto 1
+              </h2>
+            </div>
+          </div>
+          <div class="p-4">
+            <div
+              class="bg-gray-100 shadow-lg p-6 rounded-lg transition duration-500 hover:scale-110"
+            >
+              <img
+                class="max-h-60 2xl:max-h-[384px] w-full rounded object-cover object-center mb-6"
+                src="/assets/img/resto2.jpg"
+                alt="content"
+              />
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Resto 2
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF RESTAURANT -->
+
+    <!-- PRICING -->
+    <a class="invisible relative block top-[-60px]" id="prices"></a>
+    <section class="bg-white">
+      <div class="my-10 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+              <h2 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Price List</h2>
+              <div class="mx-auto h-1 w-[100px] bg-indigo-500 rounded mb-5"></div>
+              <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Anda bingung mengenai harga paket? Berikut Price List Wahana Imajinasi! Karena kami ada untuk Anda!</p>
+          </div>
+          
+          <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+              <!-- Pricing Card -->
+              <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-200 shadow xl:p-8 dark:bg-white-800 dark:text-black transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300">
+                  <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
+                  <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
+                  <div class="flex justify-center items-baseline my-8">
+                      <span class="mr-2 text-5xl font-extrabold">$29</span>
+                      <span class="text-gray-500 dark:text-gray-400">/month</span>
+                  </div>
+                  <!-- List -->
+                  <ul role="list" class="mb-8 space-y-4 text-left">
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Individual configuration</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>No setup, or hidden fees</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Team size: <span class="font-semibold">1 developer</span></span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Premium support: <span class="font-semibold">6 months</span></span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Free updates: <span class="font-semibold">6 months</span></span>
+                      </li>
+                  </ul>
+                  <a href="#" class="text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-indigo-900">Get started</a>
+              </div>
+              <!-- Pricing Card -->
+              <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-200 shadow xl:p-8 dark:bg-white-800 dark:text-black transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300">
+                  <h3 class="mb-4 text-2xl font-semibold">Company</h3>
+                  <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended & premium support.</p>
+                  <div class="flex justify-center items-baseline my-8">
+                      <span class="mr-2 text-5xl font-extrabold">$99</span>
+                      <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400>/month</span>
+                  </div>
+                  <!-- List -->
+                  <ul role="list" class="mb-8 space-y-4 text-left">
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Individual configuration</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>No setup, or hidden fees</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Team size: <span class="font-semibold">10 developers</span></span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Premium support: <span class="font-semibold">24 months</span></span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Free updates: <span class="font-semibold">24 months</span></span>
+                      </li>
+                  </ul>
+                  <a href="#" class="text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-indigo-900">Get started</a>
+              </div>
+              <!-- Pricing Card -->
+              <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-200 shadow xl:p-8 dark:bg-white-800 dark:text-black transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300">
+                  <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
+                  <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and extended redistribution rights.</p>
+                  <div class="flex justify-center items-baseline my-8">
+                      <span class="mr-2 text-5xl font-extrabold">$499</span>
+                      <span class="text-gray-500 dark:text-gray-400">/month</span>
+                  </div>
+                  <!-- List -->
+                  <ul role="list" class="mb-8 space-y-4 text-left">
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Individual configuration</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>No setup, or hidden fees</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Team size: <span class="font-semibold">100+ developers</span></span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Premium support: <span class="font-semibold">36 months</span></span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Free updates: <span class="font-semibold">36 months</span></span>
+                      </li>
+                  </ul>
+                  <a href="#" class="text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-indigo-900">Get started</a>
+              </div>
+          </div>
+      </div>
+    </section>
+  <!-- END OF PRICING -->
 
     <!-- FOOTER -->
     <footer class="text-gray-600 body-font bg-gray-100">
@@ -333,9 +512,9 @@
     <!-- END OF FOOTER -->
 
     <!-- CAMERA BUTTON -->
-    <button class="p-0 w-12 h-12 lg:w-14 lg:h-14 bg-indigo-600 rounded-full hover:bg-indigo-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none fixed bottom-4 right-4">
+    <!-- <button class="p-0 w-12 h-12 lg:w-14 lg:h-14 bg-indigo-600 rounded-full hover:bg-indigo-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none fixed bottom-4 right-4">
       <i class="mdi mdi-camera w-6 h-6 text-2xl lg:justify-center lg:text-center lg:items-center inline-block text-white"></i>
-    </button>
+    </button> -->
     <!-- END OF CAMERA BUTTON -->
 
     
